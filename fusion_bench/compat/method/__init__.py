@@ -38,6 +38,8 @@ class AlgorithmFactory:
         "sparse_clip_weight_ensembling_moe": "fusion_bench.method.SparseCLIPWeightEnsemblingMoEAlgorithm",
         "smile_mistral_upscaling": ".smile_upscaling.smile_mistral_upscaling.SmileMistralUpscalingAlgorithm",
         "rankone_moe": ".rankone_moe.clip_rankone_moe.CLIPRankOneMoEAlgorithm",
+        "clip_weight_ensembling_moe_fingerprint": "fusion_bench.method.we_moe.clip_we_moe_fingerprint.CLIPWeightEnsemblingMoEFingerprintAlgorithm",
+
     }
 
     @staticmethod
