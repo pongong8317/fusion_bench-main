@@ -1,0 +1,16 @@
+# 基于 weight_ensembling_moe.yaml 继承
+defaults:
+  - override /method: wemoe/weight_ensembling_moe
+
+# 使用新类
+_target_: fusion_bench.method.we_moe.clip_we_moe_fingerprint.CLIPWeightEnsemblingMoEFingerprintAlgorithm
+name: clip_weight_ensembling_moe_fingerprint
+
+# 禁用 TTA
+max_steps: 0
+
+# 指纹参数嵌套
+fingerprint:
+  sample_per_task: 100
+  output_path: /content/drive/MyDrive/hfcache/finetune_model
+  output_formats: ["pt", "csv"]
